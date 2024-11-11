@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: grey;
+    width: 800px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    justify-content: center;
+}
+.container {
+    width: 800px;
+    justify-content: center;
+    /* margin-top: 50px; */
+    margin-left: 320px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #fff;
+
+}
+nav {
+    text-align: center;
+    justify-content: center;
+    margin-top: 5px;
+    width: 800px;
+    border-radius: 5px;
+}
+
+nav h1 {
+    color: navy;
+    margin-bottom: 5px;
+}
+
+nav h4 {
+    color: #4e4d4d;
+    margin-bottom: 5px;
+}
+
+.content{
+    display: flex;
+}
+
+.left {
+    padding: 10px;
+    width: 34%;
+}
+
+.one {
+    margin-bottom: 15px;
+}
+
+.one h3 {
+    color: navy;
+    margin-bottom: 5px;
+}
+
+.one p {
+    font-size: 14px;
+    padding: 3px;
+}
+
+.one h4 {
+    font-size: 14px;
+    padding: 2px;
+}
+
+.right {
+    padding: 15px;
+    width: 66%;
+}
+
+.two {
+    margin-bottom: 20px;
+}
+
+.two h3 {
+    color: navy;
+    margin-bottom: 12px;
+}
+
+.two p {
+    padding: 3px;
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: #414040;
+}
+
+.two h4 {
+    color: navy;
+}
+
+ul li {
+    list-style: none;
+    font-size: 13.5px;
+    color: #3b3a3a;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+    body {
+        box-sizing: border-box;
+        padding: 40px;
+        width:100%;
+        margin-left:-70px;
+    }
+    .container {
+        width: 100%;
+        /* margin: 0 auto; */
+        margin-left:45px;
+        justify-content: center;
+        padding: 10px;
+    }
+    nav {
+        width: 100%; 
+        text-align: center;
+        /* margin: 0 auto;  */
+    }
+    .content {
+        flex-direction: row;
+    }
+    .left, .right {
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        box-sizing: border-box;
+        padding: 20px;
+        margin: 0;
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+        margin: 10px;
+        padding: 5px;
+        
+    }
+    nav {
+        width: 100%; 
+        text-align: center;
+        margin: 0 auto;
+    }
+    nav h1 {
+        font-size: 24px;
+    }
+    nav h4 {
+        font-size: 14px;
+    }
+    .one p, .one h4, .two p, ul li {
+        font-size: 11px;
+    }
+    .content {
+        flex-direction: row;
+    }
+    .left, .right {
+        width: 90%;
+        padding: 10px;
+    }
+}
